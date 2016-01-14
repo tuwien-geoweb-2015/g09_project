@@ -1,0 +1,10 @@
+Data_Item                                             Item_Description                                             UnitDecimal  US_Total    Minimum     Maximum     Source
+STATECOU  FIPS State and County code
+x100        OePNV: unwichtig; Citybike: unwichtig; Carsharing: unwichtig                                                                         ABS    0      313914040          71   313914040  CENSUS
+x110        OePNV: wichtig;   Citybike: unwichtig; Carsharing: unwichtig                                                                         ABS    0      308747508          82   308747508  CENSUS
+x130        OePNV: unwichtig; Citybike: wichtig;   Carsharing: unwichtig                                                                         PCT    1            1.7       -18.1        25.6  CENSUS
+x140        OePNV: wichtig;   Citybike: wichtig;   Carsharing: unwichtig                                                                         ABS    0      308745538          82   308745538  CENSUS
+x160        OePNV: unwichtig; Citybike: unwichtig; Carsharing: wichtig                                                                       PCT    1            6.4         0.0        13.3  CENSUS
+x170        OePNV: wichtig;   Citybike: unwichtig; Carsharing: wichtig                                                                       PCT    1           23.5         0.0        41.4  CENSUS
+x190        OePNV: unwichtig; Citybike: wichtig;   Carsharing: unwichtig                                                                       PCT    1           13.7         3.6        49.3  CENSUS
+x200        OePNV: wichtig;   Citybike: wichtig;   Carsharing: wichtig                                                                       PCT    1           50.8        30.1        57.0  CENSUS
