@@ -1,0 +1,57 @@
+<!doctype html> 
+<html>
+    <head>
+		<link rel="stylesheet" href="../../style.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://openlayers.org/en/v3.11.0/css/ol.css" type="text/css">
+        <title>GeoWeb g09: Projekt</title>
+		<style type="text/css">
+iframe {
+width: 100%;
+height: 100vh;
+max-width: 1200px;
+min-width: 400px;
+border: 0;
+frameborder: no;
+}
+html, body {
+width: 100vw;
+margin: 0;
+padding: 0;
+background-image: url(images/Background.jpg);
+background-size: 100vw;
+}
+</style>
+
+    </head>
+	<body>
+        <h2><font style="text-decoration: underline" >Wohnstandortsuche mit Fokus auf (nachhaltige) Mobilität</font></h2>
+		<iframe src="Map.htm"><p>Fehler beim Laden! Benutzen Sie einen anderen Browser</p></iframe>
+
+		<h2>Welche Mobilitätsangebote sind Ihnen besonders wichtig?</h2>
+		<p><form method="POST" action="gewichtung_send.php">
+            <?php //if(isset($_REQUEST['gewichtung_fuss'])){}else{echo"Kein Wert eingegeben";}?>
+            <p><b>OEPNV-Stationen </b><br />
+                  nicht wichtig<input type="radio" name="gewichtung_oepnv" value="1"/>
+                  <input type="radio" name="gewichtung_oepnv" value="2"/>wichtig<br /><br />
+            <b>Citybike-Stationen </b><br />
+                  nicht wichtig<input type="radio" name="gewichtung_citybike" value="1"/>
+                  <input type="radio" name="gewichtung_citybike" value="2"/>wichtig<br /><br />
+            <b>Car-Sharing Standorte</b><br />
+                  nicht wichtig<input type="radio" name="gewichtung_car" value="1"/>
+                  <input type="radio" name="gewichtung_car" value="2"/>wichtig<br /><br />
+            <input type="submit" value="Berechnen">
+            <input type="reset" value="Aktualisieren"> <br /><br />
+            Ihre Präferenzen werden berechnet!<br>
+        </form>	</p>
+            <p>Mobilität bzw. mobil sein ist eine Grundbedingung für die Teilnahme am städtischen Leben. Planerische, architektonische, politische und bürokratische Festlegungen haben großen Einfluss auf unsere persönlichen Entscheidungen und Möglichkeiten Mobilitätsangebote zu nutzen.</br>
+			Dem gesellschaftlichen Wandel, hin zu einer weniger autozentrierten Fortbewegung innerhalb der Stadt stehen diverse Beschränkungen entgegen: nach wie vor regelt etwa die Stellplatzverordnung, dass neue Wohnbauten mit Parkraum direkt im Gebäude ausgestattet werden.</br>
+			Im Gegensatz dazu müssen Bewohner*innen einen oftmals weiten Weg zur nächsten ÖPNV-Station bestreiten. Je näher das Angebot am Wohnstandort, desto höher die Nutzung von nachhaltigen Formen der Mobilität.</br>
+			Außerdem gibt es Gruppen, die sich bewusst oder aus monetären Gründen gegen ein Auto entscheiden. Unsere Wohnstandortsuche möchte auch diese miteinschließen und es mit einer Kombination aus relevanten Daten und smarten Abfragen ermöglichen, sich einen Wohnstandort zu suchen, der maßgeschneidert ist für die individuellen Anforderungen.</br>
+			In der ersten Phase der Konzeption gibt es folgende Überlegungen, welche Daten für das Projekt interessant sind:</br>
+			-	Pendler*innen: der dynamische Charakter dieser Daten hilft dabei das aktuelle Mobilitätsverhalten zu untersuchen und Wohn- mit Arbeitsstandorten verknüpft zu denken.</br>
+			-	Angebot nachhaltiger Mobilität: Carsharing-Standorte, Citybike, ÖPNV-Stationen, Park&Ride-Anlagen, Radwerkstätten etc.</br>
+			-	Mietpreisniveau: der Wohnstandort soll auch leistbar sein, denn die U-Bahn-Station vor der Haustüre am Stephansplatz nutzt nichts, wenn die Wohnung dort nicht leistbar ist.</br>
+	</p>
+	</body>     
+</html>
